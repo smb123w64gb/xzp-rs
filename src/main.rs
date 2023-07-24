@@ -1,6 +1,8 @@
 use clap::{Parser,CommandFactory};
 use std::path::PathBuf;
 
+mod xzp;
+
 #[derive(Parser)]
 #[clap(author, version, about, long_about = None)]
 struct Args {
@@ -21,7 +23,7 @@ struct Args {
 }
 
 fn main() {
-    let args = Args::parse();
+    let _args = Args::parse();
     let mut cmd = Args::command();
     cmd.print_help();
 }
