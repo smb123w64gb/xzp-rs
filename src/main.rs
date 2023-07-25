@@ -25,5 +25,5 @@ struct Args {
 fn main() {
     let _args = Args::parse();
     let mut cmd = Args::command();
-    cmd.print_help();
+    let _ = cmd.print_help();
 }
